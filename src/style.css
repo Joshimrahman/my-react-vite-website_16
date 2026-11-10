@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  background: #172554;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav {
+  display: flex;
+  gap: 25px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1e40af, #38bdf8);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.banner {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h1 {
+  font-size: 36px;
+}
+
+.section {
+  padding: 55px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  color: #1e40af;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.section p {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.light {
+  background: #f1f5f9;
+}
+
+.btn {
+  display: inline-block;
+  background: #3b754a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #ea580c;
+}
+
+.contact-form {
+  max-width: 450px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: p10x;
+  color: #3b754a;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+  color: #3b754a;
+}
+
+.footer {
+  background: #172554;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+}
